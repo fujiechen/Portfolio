@@ -1,7 +1,54 @@
-.section {
-    text-align:center;
-    font-size: 3em;
+body {
+    font-family: "Verdana", Geneva, sans-serif;
 }
+
 #callbacks-placeholder{
-    position:fixed;top:50px;left:50px;color:black;z-index:999;
+    position:fixed;
+    top:50px;
+    left:50px;
+    color:black;
+    z-index:999;
+}
+
+canvas {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+.front-page {
+    color: #FFFFFF;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social-icon {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.next-step {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%,0);
 }

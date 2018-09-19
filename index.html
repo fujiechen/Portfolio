@@ -8,30 +8,54 @@
     <meta name="description" content="A Portfolio of Fujie Chen">
     <meta name="author" content="Fujie Chen">
 
-    <script src="asset/js/jquery-3.3.1.min.js"></script>
     <script src="asset/js/fullpage.min.js"></script>
+    <script src="asset/js/particles.min.js"></script>
     <script src="asset/js/index.js"></script>
 
-    <link rel="stylesheet" href="asset/css/fullpage.min.css">
+    <link rel="stylesheet" href="asset/css/fullpage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/index.css">
 </head>
 
 <body>
-
     <div id="fullpage">
-        <div class="section">One</div>
         <div class="section">
-            <div class="slide" data-anchor="slide1">
-                <img src="" data-src="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/iphone-blue.png" />
+            <div id="particles-js">
+                <div class="front-page">
+                    <h1 class="text-center">Fujie Chen</h1>
+                    <h2 class="text-center">A Full Stack Developer</h2>
+                    <div class="text-center">
+                        <a aria-label="My Github" target="_blank" href="https://github.com/imaple7">
+                            <i class="fab fa-github fa-3x social-icon"></i>
+                        </a>
+                        <a aria-label="My Blog" target="_blank" href="https://blog.fujiechen.com">
+                            <i class="fab fa-pied-piper-alt fa-3x social-icon"></i>
+                        </a>
+                        <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/fujiechen">
+                            <i class="fab fa-linkedin fa-3x social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center next-step">
+                    <a href="#aboutme">
+                        <i class="fas fa-angle-down fa-5x"></i>
+                    </a>
+                </div>
+                <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas>
             </div>
-            <div class="slide" data-anchor="slide2">Two 2</div>
         </div>
         <div class="section">
-            <img src="" data-src="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/intro.png" />
+            About Me
         </div>
-        <div class="section">Four</div>
+        <div class="section">
+            Projects
+        </div>
+        <div class="section">
+            Four
+        </div>
     </div>
 
+    <script src="asset/js/loading.js"></script>
 </body>
 
 </html>
