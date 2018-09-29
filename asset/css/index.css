@@ -2,40 +2,12 @@ body {
     font-family: "Verdana", Geneva, sans-serif;
 }
 
-#callbacks-placeholder{
-    position:fixed;
-    top:50px;
-    left:50px;
-    color:black;
-    z-index:999;
-}
-
-canvas {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-}
-
-.front-page {
-    color: #FFFFFF;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: auto;
-    transform: translate(-50%,-50%);
-}
-
-h1 {
-    font-size: 4em;
-}
-
-.text-center {
-    text-align: center;
-}
-
-a, a:visited {
+a, a:visited, a:hover {
     text-decoration: none;
+    color: #FFFFFF;
+}
+
+.font-white {
     color: #FFFFFF;
 }
 
@@ -44,11 +16,16 @@ a, a:visited {
     margin-right: 0.2em;
 }
 
-.next-step {
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin: auto;
-    transform: translate(-50%,0);
+#particles-js {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top-of-particle {
+    z-index: 100;
+    position: relative;
 }
